@@ -147,6 +147,7 @@ alias vuln='tk-vuln-check'
 alias wifi='tk-wifi-recon'
 alias dirbrute='tk-dir-brute'
 alias nikto='tk-nikto-scan'
+alias hunt='tk-qtx-hunt'
 FISH_TOOLS
 fi
 

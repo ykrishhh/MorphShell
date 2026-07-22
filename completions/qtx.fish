@@ -23,6 +23,13 @@ complete -c hunt -l help -d "Show help"
 
 complete -c fm -f
 
+complete -c net -s p -r -d "Ping target"
+complete -c net -s s -d "Speed test"
+complete -c net -s l -d "Latency only"
+complete -c net -s a -d "All tests"
+complete -c net -s n -r -d "Ping count"
+complete -c net -l help -d "Show help"
+
 complete -c scan -l help -d "Show scan help"
 complete -c recon -l help -d "Show recon help"
 complete -c ssl -l help -d "Show ssl-check help"

@@ -149,6 +149,7 @@ alias dirbrute='tk-dir-brute'
 alias nikto='tk-nikto-scan'
 alias hunt='tk-qtx-hunt'
 alias fm='tk-qtx-fm'
+alias net='tk-qtx-net'
 FISH_TOOLS
 fi
 

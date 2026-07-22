@@ -21,6 +21,8 @@ complete -c hunt -s t -d "Skip nikto"
 complete -c hunt -s q -d "Quiet mode"
 complete -c hunt -l help -d "Show help"
 
+complete -c fm -f
+
 complete -c scan -l help -d "Show scan help"
 complete -c recon -l help -d "Show recon help"
 complete -c ssl -l help -d "Show ssl-check help"

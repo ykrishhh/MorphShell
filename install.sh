@@ -148,6 +148,7 @@ alias wifi='tk-wifi-recon'
 alias dirbrute='tk-dir-brute'
 alias nikto='tk-nikto-scan'
 alias hunt='tk-qtx-hunt'
+alias fm='tk-qtx-fm'
 FISH_TOOLS
 fi
 

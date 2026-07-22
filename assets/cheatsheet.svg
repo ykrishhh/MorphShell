@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00ccff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" rx="12" fill="#0a0a0f"/>
+  <rect x="1" y="1" width="798" height="598" rx="11" fill="none" stroke="url(#g)" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="40" y="45" font-family="monospace" font-weight="bold" font-size="20" fill="url(#g)">QTX CHEAT SHEET</text>
+  <text x="40" y="65" font-family="monospace" font-size="11" fill="#555">15 tools for Termux pentesting</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="80" x2="760" y2="80" stroke="#222" stroke-width="1"/>
+
+  <!-- Column 1: Recon -->
+  <text x="40" y="110" font-family="monospace" font-weight="bold" font-size="14" fill="#00ff88">RECON</text>
+
+  <text x="40" y="135" font-family="monospace" font-size="12" fill="#00ccff">scan</text>
+  <text x="130" y="135" font-family="monospace" font-size="11" fill="#888">192.168.1.1 -T</text>
+
+  <text x="40" y="155" font-family="monospace" font-size="12" fill="#00ccff">recon</text>
+  <text x="130" y="155" font-family="monospace" font-size="11" fill="#888">example.com -d</text>
+
+  <text x="40" y="175" font-family="monospace" font-size="12" fill="#00ccff">ssl</text>
+  <text x="130" y="175" font-family="monospace" font-size="11" fill="#888">google.com -c -t</text>
+
+  <text x="40" y="195" font-family="monospace" font-size="12" fill="#00ccff">wifi</text>
+  <text x="130" y="195" font-family="monospace" font-size="11" fill="#888">-s (scan networks)</text>
+
+  <!-- Column 2: Attack -->
+  <text x="300" y="110" font-family="monospace" font-weight="bold" font-size="14" fill="#ff4444">ATTACK</text>
+
+  <text x="300" y="135" font-family="monospace" font-size="12" fill="#00ccff">vuln</text>
+  <text x="390" y="135" font-family="monospace" font-size="11" fill="#888">example.com</text>
+
+  <text x="300" y="155" font-family="monospace" font-size="12" fill="#00ccff">dirbrute</text>
+  <text x="390" y="155" font-family="monospace" font-size="11" fill="#888">https://target -x php</text>
+
+  <text x="300" y="175" font-family="monospace" font-size="12" fill="#00ccff">nikto</text>
+  <text x="390" y="175" font-family="monospace" font-size="11" fill="#888">example.com -f</text>
+
+  <text x="300" y="195" font-family="monospace" font-size="12" fill="#00ccff">hunt</text>
+  <text x="390" y="195" font-family="monospace" font-size="11" fill="#888">example.com (ALL)</text>
+
+  <!-- Column 3: Utility -->
+  <text x="580" y="110" font-family="monospace" font-weight="bold" font-size="14" fill="#ffaa00">UTILITY</text>
+
+  <text x="580" y="135" font-family="monospace" font-size="12" fill="#00ccff">audit</text>
+  <text x="670" y="135" font-family="monospace" font-size="11" fill="#888">password check</text>
+
+  <text x="580" y="155" font-family="monospace" font-size="12" fill="#00ccff">hashid</text>
+  <text x="670" y="155" font-family="monospace" font-size="11" fill="#888">&lt;hash&gt;</text>
+
+  <text x="580" y="175" font-family="monospace" font-size="12" fill="#00ccff">logs</text>
+  <text x="670" y="175" font-family="monospace" font-size="11" fill="#888">-f /var/log/auth.log</text>
+
+  <text x="580" y="195" font-family="monospace" font-size="12" fill="#00ccff">net</text>
+  <text x="670" y="195" font-family="monospace" font-size="11" fill="#888">-a (speed + latency)</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="220" x2="760" y2="220" stroke="#222" stroke-width="1"/>
+
+  <!-- Terminal mockup -->
+  <text x="40" y="250" font-family="monospace" font-weight="bold" font-size="14" fill="url(#g)">TERMINAL PREVIEW</text>
+
+  <!-- Terminal window -->
+  <rect x="40" y="265" width="720" height="280" rx="8" fill="#0d1117"/>
+  <rect x="40" y="265" width="720" height="30" rx="8" fill="#161b22"/>
+  <rect x="40" y="287" width="720" height="8" fill="#161b22"/>
+  <circle cx="60" cy="280" r="5" fill="#ff5f56"/>
+  <circle cx="78" cy="280" r="5" fill="#ffbd2e"/>
+  <circle cx="96" cy="280" r="5" fill="#27c93f"/>
+  <text x="400" y="283" font-family="monospace" font-size="11" fill="#555" text-anchor="middle">fish — qtx</text>
+
+  <!-- Terminal content -->
+  <text x="56" y="315" font-family="monospace" font-size="12" fill="#555">$</text>
+  <text x="72" y="315" font-family="monospace" font-size="12" fill="#00ff88">hunt</text>
+  <text x="112" y="315" font-family="monospace" font-size="12" fill="#888">example.com</text>
+
+  <text x="56" y="340" font-family="monospace" font-size="11" fill="#00ff88">  QTX Hunt — example.com</text>
+  <text x="56" y="358" font-family="monospace" font-size="11" fill="#555">  Output: ~/qtx-hunt/example.com</text>
+  <text x="56" y="376" font-family="monospace" font-size="11" fill="#00ccff">  Launched 5 scans in parallel</text>
+
+  <text x="56" y="400" font-family="monospace" font-size="11" fill="#00ff88">  scanner — 247 lines, 8.2K</text>
+  <text x="56" y="418" font-family="monospace" font-size="11" fill="#00ff88">  recon — 89 lines, 3.1K</text>
+  <text x="56" y="436" font-family="monospace" font-size="11" fill="#00ff88">  vuln-check — 156 lines, 5.4K</text>
+  <text x="56" y="454" font-family="monospace" font-size="11" fill="#00ff88">  ssl-check — 134 lines, 4.7K</text>
+  <text x="56" y="472" font-family="monospace" font-size="11" fill="#00ff88">  nikto — 312 lines, 11.2K</text>
+
+  <text x="56" y="500" font-family="monospace" font-size="12" fill="#00ff88">  All scans complete. Results: ~/qtx-hunt/example.com</text>
+  <text x="56" y="520" font-family="monospace" font-size="12" fill="#555">$</text>
+  <rect x="64" y="508" width="8" height="16" fill="#00ff88" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Footer -->
+  <text x="400" y="585" font-family="monospace" font-size="10" fill="#333" text-anchor="middle">github.com/ykrishhh/qtx · @harry6e · MIT License</text>
+</svg>

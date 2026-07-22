@@ -1,25 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" fill="none">
   <defs>
-    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0088ff;stop-opacity:1" />
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="50%" style="stop-color:#00ccff"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
     </linearGradient>
-    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:#0088ff;stop-opacity:0.15" />
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.1"/>
     </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
+
   <!-- Background -->
-  <rect width="400" height="120" rx="12" fill="#0a0a0a"/>
-  <rect x="1" y="1" width="398" height="118" rx="11" fill="none" stroke="url(#g1)" stroke-width="1" opacity="0.3"/>
-  <!-- Terminal icon -->
-  <rect x="24" y="28" width="64" height="64" rx="8" fill="url(#g2)" stroke="url(#g1)" stroke-width="1.5"/>
-  <path d="M40 52 L52 60 L40 68" stroke="#00ff88" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <line x1="56" y1="68" x2="72" y2="68" stroke="#0088ff" stroke-width="3" stroke-linecap="round"/>
-  <!-- QTX text -->
-  <text x="108" y="62" font-family="monospace" font-weight="bold" font-size="42" fill="url(#g1)">QTX</text>
+  <rect width="600" height="200" rx="16" fill="#0a0a0f"/>
+  <rect x="1" y="1" width="598" height="198" rx="15" fill="none" stroke="url(#grad)" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Terminal bracket left -->
+  <text x="30" y="118" font-family="monospace" font-weight="bold" font-size="72" fill="url(#grad)" opacity="0.3">&gt;_</text>
+
+  <!-- QTX letters with individual styling -->
+  <text x="130" y="125" font-family="'Courier New', monospace" font-weight="900" font-size="80" fill="url(#grad)" filter="url(#glow)">Q</text>
+  <text x="220" y="125" font-family="'Courier New', monospace" font-weight="900" font-size="80" fill="url(#grad)" filter="url(#glow)">T</text>
+  <text x="305" y="125" font-family="'Courier New', monospace" font-weight="900" font-size="80" fill="url(#grad)" filter="url(#glow)">X</text>
+
   <!-- Tagline -->
-  <text x="110" y="85" font-family="monospace" font-size="13" fill="#666" letter-spacing="2">SECURITY TOOLKIT</text>
-  <!-- Version dot -->
-  <circle cx="370" cy="30" r="4" fill="#00ff88" opacity="0.6"/>
+  <text x="130" y="158" font-family="'Courier New', monospace" font-size="14" fill="#555" letter-spacing="6">SECURITY TOOLKIT</text>
+
+  <!-- Version pill -->
+  <rect x="490" y="28" width="80" height="28" rx="14" fill="url(#grad2)" stroke="url(#grad)" stroke-width="0.5"/>
+  <text x="530" y="47" font-family="monospace" font-size="12" fill="#00ff88" text-anchor="middle">v2.0.0</text>
+
+  <!-- Stats -->
+  <text x="490" y="85" font-family="monospace" font-size="11" fill="#444">15 tools</text>
+  <text x="490" y="105" font-family="monospace" font-size="11" fill="#444">fish shell</text>
+  <text x="490" y="125" font-family="monospace" font-size="11" fill="#444">termux</text>
+
+  <!-- Decorative dots -->
+  <circle cx="530" cy="165" r="2" fill="#00ff88" opacity="0.4"/>
+  <circle cx="545" cy="165" r="2" fill="#00ccff" opacity="0.4"/>
+  <circle cx="560" cy="165" r="2" fill="#7c3aed" opacity="0.4"/>
+
+  <!-- Scan line effect -->
+  <rect x="30" y="170" width="440" height="1" fill="url(#grad)" opacity="0.15"/>
 </svg>

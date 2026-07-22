@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" width="400" alt="QTX Logo">
+  <img src="assets/logo.svg" width="500" alt="QTX Logo">
 </p>
 
 <h3 align="center">Termux Security Toolkit — Pentest from your phone</h3>
@@ -78,6 +78,8 @@ net -a                        # speed + latency test
 | [FEATURES.md](FEATURES.md) | Roadmap & planned features |
 | [TROUBLESHOOTING.md](TROUBLESHOOTING.md) | Real Termux problems & fixes |
 | [CHEATSHEET.md](CHEATSHEET.md) | Quick security commands |
+| [docs/architecture.md](docs/architecture.md) | Mermaid diagrams & architecture |
+| [assets/cheatsheet.svg](assets/cheatsheet.svg) | Visual cheat sheet |
 
 ## Project Structure
 

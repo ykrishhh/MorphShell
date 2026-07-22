@@ -16,7 +16,7 @@ A sleek Termux theme with a smart prompt, syntax highlighting, a dynamic animate
 
 ```
 pkg install git fish eza bat starship nmap curl python
-git clone https://github.com/harry6e/QTX.git
+git clone https://github.com/ykrishhh/qtx.git
 cd QTX
 chmod +x install.sh
 ./install.sh

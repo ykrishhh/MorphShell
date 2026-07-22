@@ -80,7 +80,7 @@ DIR="$TMPDIR/QTX"
 rm -rf "$DIR"
 
 echo -e "${CYAN}[*] Cloning QTX...${RESET}"
-git clone -q https://github.com/harry6e/QTX "$DIR" || {
+git clone -q https://github.com/ykrishhh/qtx "$DIR" || {
   echo -e "${RED}[!] Failed to clone QTX repo${RESET}"
   exit 1
 }

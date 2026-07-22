@@ -8,7 +8,7 @@
   <a href="https://github.com/ykrishhh/qtx/releases"><img src="https://img.shields.io/badge/version-2.0.0-00ff88?style=flat-square" alt="Version"></a>
   <a href="https://github.com/ykrishhh/qtx/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0088ff?style=flat-square" alt="License"></a>
   <a href="https://github.com/ykrishhh/qtx"><img src="https://img.shields.io/badge/platform-Termux-0a0a0a?style=flat-square&labelColor=333" alt="Platform"></a>
-  <a href="https://github.com/ykrishhh/qtx"><img src="https://img.shields.io/badge/tools-14-ff4444?style=flat-square" alt="Tools"></a>
+  <a href="https://github.com/ykrishhh/qtx"><img src="https://img.shields.io/badge/tools-15-ff4444?style=flat-square" alt="Tools"></a>
   <a href="https://github.com/ykrishhh/qtx/stargazers"><img src="https://img.shields.io/github/stars/ykrishhh/qtx?style=flat-square&color=ffaa00" alt="Stars"></a>
 </p>
 
@@ -47,6 +47,8 @@ Restart Termux. Done.
 | `tk-qtx-hunt` | `hunt` | **Run all tools in parallel** |
 | `tk-qtx-fm` | `fm` | Terminal file manager |
 | `tk-qtx-net` | `net` | Network speed & latency test |
+| `tk-setup` | — | Environment setup |
+| `tk-uninstall` | — | Clean removal |
 
 ### Usage
 

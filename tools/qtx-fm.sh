@@ -5,6 +5,16 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 . "$SCRIPT_DIR/lib/colors.sh"
 
+usage() {
+    echo "Usage: $(basename "$0") [directory]"
+    echo ""
+    echo "Terminal file manager. Press numbers to navigate."
+    echo "Keys: c=cd, e=edit, v=view, d=delete, m=mkdir, s=search, q=quit"
+    exit 1
+}
+
+[ "${1:-}" = "-h" ] || [ "${1:-}" = "--help" ] && usage
+
 DIR="${1:-.}"
 DIR="$(cd "$DIR" 2>/dev/null && pwd || echo "$HOME")"
 
